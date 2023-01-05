@@ -1,0 +1,56 @@
+---
+import cotiLogoWhiteImage from "~/assets/coti-logo-white.svg";
+import Starfield from "~/components/starfield.astro";
+---
+
+<section class="relative h-full">
+  <Starfield />
+
+  <div class="relative h-full grid place-items-center">
+    <h4 class="flex flex-col gap-2">
+      <img src={cotiLogoWhiteImage} alt="logomark" class="h-24 text-white md:h-32">
+
+      <div class="gradient-text font-extrabold tracking-tighter text-3xl ">
+        De la mano con la tecnología buscamos soluciones a tus necesidades
+      </div>
+    </h4>
+  </div>
+</section>
+
+<noscript>
+  <style>
+    #splash-bg-fallback {
+      display: block;
+    }
+  </style>
+</noscript>
+
+<style>
+  @keyframes float {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 30px, 0);
+    }
+  }
+
+  #astronaut {
+    animation: float linear 2.5s infinite alternate;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #astronaut {
+      @apply animate-none;
+    }
+
+    :global(#starfield) {
+      @apply hidden;
+    }
+
+    #splash-bg-fallback {
+      @apply block;
+    }
+  }
+</style>
