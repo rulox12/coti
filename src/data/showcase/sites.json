@@ -1,23 +1,23 @@
 [
   {
-    "title": "PoliNations",
-    "image": "./images/polinations.png",
-    "url": "https://polinations.com/"
+    "title": "Coti",
+    "image": "./images/designcember.png",
+    "url": "https://coti.com.co"
   },
   {
-    "title": "Astro Docs",
+    "title": "Cotionline",
+    "image": "./images/cotionline.png",
+    "url": "https://cotionline.com/"
+  },
+  {
+    "title": "Cotipay",
     "image": "./images/astro-docs.png",
-    "url": "https://docs.astro.build/"
+    "url": "https://cotipay.com"
   },
   {
     "title": "<div>RIOTS",
     "image": "./images/divriots.png",
     "url": "https://divriots.com/"
-  },
-  {
-    "title": "Designcember",
-    "image": "./images/designcember.png",
-    "url": "https://designcember.com/"
   },
   {
     "title": "The Firebase Blog",
