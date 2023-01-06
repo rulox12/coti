@@ -41,9 +41,18 @@ import { Icon } from "astro-icon";
     document
       .querySelector(`#icon-theme-${themeCurrent}`)
       ?.classList.add("hidden");
+
+      document
+      .querySelector(`#logo-theme-${themeCurrent}`)
+      ?.classList.add("hidden");
+
     const themeNext = getThemeNext();
     document
       .querySelector(`#icon-theme-${themeNext}`)
+      ?.classList.remove("hidden");
+    
+      document
+      .querySelector(`#logo-theme-${themeNext}`)
       ?.classList.remove("hidden");
   };
 
@@ -51,6 +60,7 @@ import { Icon } from "astro-icon";
     const themeNext = getThemeNext();
     document.documentElement.dataset.theme = themeNext;
     localStorage.setItem("theme", themeNext);
+
     updateIcon();
   });
 
