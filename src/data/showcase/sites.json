@@ -1,7 +1,7 @@
 [
   {
     "title": "Coti",
-    "image": "./images/designcember.png",
+    "image": "./images/coti.png",
     "url": "https://coti.com.co"
   },
   {
@@ -13,20 +13,5 @@
     "title": "Cotipay",
     "image": "./images/astro-docs.png",
     "url": "https://cotipay.com"
-  },
-  {
-    "title": "<div>RIOTS",
-    "image": "./images/divriots.png",
-    "url": "https://divriots.com/"
-  },
-  {
-    "title": "The Firebase Blog",
-    "image": "./images/firebase-blog.png",
-    "url": "https://firebase.blog/"
-  },
-  {
-    "title": "Corset",
-    "image": "./images/corset.png",
-    "url": "https://corset.dev/"
   }
 ]

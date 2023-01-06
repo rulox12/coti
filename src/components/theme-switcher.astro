@@ -46,6 +46,14 @@ import { Icon } from "astro-icon";
       .querySelector(`#logo-theme-${themeCurrent}`)
       ?.classList.add("hidden");
 
+      const logoHeaderSelector = document
+      .querySelector(`#logo-header-${themeCurrent}`);
+      logoHeaderSelector?.classList.add("hidden");
+
+      const logoHeaderSmSelector = document
+      .querySelector(`#logo-header-sm-${themeCurrent}`);
+      logoHeaderSmSelector?.classList.add("hidden");
+
     const themeNext = getThemeNext();
     document
       .querySelector(`#icon-theme-${themeNext}`)
@@ -53,6 +61,14 @@ import { Icon } from "astro-icon";
     
       document
       .querySelector(`#logo-theme-${themeNext}`)
+      ?.classList.remove("hidden");
+
+      document
+      .querySelector(`#logo-header-${themeNext}`)
+      ?.classList.remove("hidden");
+
+      document
+      .querySelector(`#logo-header-sm-${themeNext}`)
       ?.classList.remove("hidden");
   };
 

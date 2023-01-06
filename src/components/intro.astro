@@ -3,12 +3,12 @@ import ContentSection from "~/components/content-section.astro";
 import { Icon } from "astro-icon";
 ---
 
-<ContentSection title="¿Quiénes somos?" id="intro">
+<ContentSection title="¿Quiénes somos?" id="who_are_we">
   <Icon id="logo-theme-dark" slot="eyebrow" name={'coti-logo'} alt="logomark" class="h-24 text-white md:h-32" />
   <Icon id="logo-theme-light" slot="eyebrow" name={'coti-logo-white'} alt="logomark" class="h-24 text-white md:h-32 hidden" />
     
   <Fragment slot="lead">
-    Somos una empresa de innovación tecnológica que nace a partir de las necesidades presentadas actualmente en el mercado nacional bajo el ámbito tecnológico, construcción y manufactura.    
+    Somos una empresa de <span class="text-primary">innovación tecnológica</span> que nace a partir de las necesidades presentadas actualmente en el mercado nacional bajo el ámbito tecnológico, construcción y manufactura.    
     <br>
     <span class="text-primary">Coti</span> te brinda las mejores soluciones a tus necesidades, sin sacrificar calidad, con los mejores precios del mercado.
   </Fragment>
