@@ -1,0 +1,89 @@
+---
+import TechnologyList from "~/components/technology-list.astro";
+import ContentSection from "~/components/content-section.astro";
+import type { TechnologyItem } from "~/types";
+
+const frameworks: Array<TechnologyItem> = [
+  {
+    title: "React",
+    icon: "frameworks/react",
+    url: "https://reactjs.org/",
+  },
+  {
+    title: "Vue",
+    icon: "frameworks/vue",
+    url: "https://vuejs.org/",
+  },
+  {
+    title: "PHP",
+    icon: "mdi:language-php",
+    url: "https://php.net/",
+  },
+  {
+    title: "Node js",
+    icon: "mdi:nodejs",
+    url: "https://nodejs.org/",
+  },
+  {
+    title: "C#",
+    icon: "mdi:language-csharp",
+    url: "https://dotnet.microsoft.com/",
+  },
+  {
+    title: "Java",
+    icon: "mdi:language-java",
+    url: "https://java.com",
+  },
+];
+
+const platforms: Array<TechnologyItem> = [
+  {
+    title: "AWS",
+    icon: "mdi:aws",
+    url: "https://aws.amazon.com/",
+  },
+  {
+    title: "Azure",
+    icon: "mdi:azure",
+    url: "https://azure.microsoft.com",
+  },
+  {
+    title: "Bases de datos",
+    icon: "mdi:database",
+    url: "#",
+  },
+  {
+    title: "GitHub",
+    icon: "fa-brands:github",
+    url: "https://pages.github.com/",
+  },
+  {
+    title: "Bitbucket",
+    icon: "fa-brands:bitbucket",
+    url: "https://bitbucket.org",
+  },
+  {
+    title: "Slack",
+    icon: "fa-brands:slack",
+    url: "https://slack.com/",
+  },
+];
+---
+
+<ContentSection title="Tecnologías" id="technologies">
+  <Fragment slot="lead">
+    Coti está a la <span class="text-primary">vanguardia tecnolígica</span>. Nos adaptamos a cualquier{" "}
+    <span class="text-primary">necesidad</span>
+    y así ofrecer un servicio <span class="text-primary">ágil</span> y de <span class="text-primary">calidad</span>.
+  </Fragment>
+  <TechnologyList
+    items={frameworks}
+    title="Stack de trabajo"
+    url="https://docs.astro.build/core-concepts/framework-components/"
+  />
+  <TechnologyList
+    items={platforms}
+    title="Plataformas"
+    url="https://docs.astro.build/guides/deploy/"
+  />
+</ContentSection>

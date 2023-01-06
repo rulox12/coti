@@ -1,9 +1,9 @@
 ---
 import { Icon } from "astro-icon";
-import type { CompatibilityItem } from "~/types";
+import type { TechnologyItem } from "~/types";
 
 export interface Props {
-  items: Array<CompatibilityItem>;
+  items: Array<TechnologyItem>;
   title: string;
   url: string;
 }
@@ -31,7 +31,7 @@ const { items, title, url } = Astro.props;
       }
     </ul>
   </div>
-  <p class="text-right text-sm">
+  <!-- <p class="text-right text-sm">
     <a class="text-primary" href={url}> ...and more &rarr;</a>
-  </p>
+  </p> -->
 </div>

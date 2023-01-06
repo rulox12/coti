@@ -8,5 +8,10 @@ a,
 
 .gradient-text {
   @apply bg-clip-text text-transparent;
+  background-color: #32708e;
+}
+
+.gradient-main-text {
+  @apply bg-clip-text text-transparent;
   background-color: #e3e5eb;
 }
